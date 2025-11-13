@@ -4,12 +4,11 @@ using namespace std;
 int main() {
     fstream new_file;
     new_file.open("new_file.txt", ios::out); 
-
     if (!new_file) {
         cout << "File creation failed!" << endl;
     } else {
         cout << "New file created" << endl;
-        new_file.close(); // Close the file
+        new_file.close(); 
     }
     return 0;
 }
